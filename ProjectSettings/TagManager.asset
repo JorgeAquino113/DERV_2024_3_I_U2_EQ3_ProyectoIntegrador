@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Balon
+  - Suelo
+  - Rayo
+  - Muro
   layers:
   - Default
   - TransparentFX
@@ -11,10 +15,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Balon
+  - Jugador
+  - Rayo
+  - Muro
   - 
   - 
   - 
