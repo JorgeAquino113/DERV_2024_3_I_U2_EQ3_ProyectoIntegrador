@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform respawnPoint; // Arrastra aquí el objeto "RespawnPoint" en el Inspector
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        // Verifica si el objeto tocado es un pico (puedes asignar una etiqueta)
+        if (collision.CompareTag("Pico"))
+        {
+            // Teletransporta el personaje a la posición de inicio
+            transform.position = respawnPoint.position;
+        }
     }
 }
